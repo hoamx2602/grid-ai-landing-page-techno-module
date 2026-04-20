@@ -766,7 +766,7 @@
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
 
@@ -896,6 +896,8 @@
       padding: 32px;
       position: relative;
       transition: border-color .2s, box-shadow .2s;
+      display: flex;
+      flex-direction: column;
     }
 
     .price-card.featured {
@@ -985,6 +987,7 @@
       cursor: pointer;
       border: none;
       transition: transform .2s, box-shadow .2s;
+      margin-top: auto;
     }
 
     .price-btn.outline {
@@ -1176,10 +1179,16 @@
       font-size: 0.8rem;
       color: rgba(255, 255, 255, 0.60);
       margin-top: 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
     }
 
     .cta-trust span {
-      margin: 0 8px;
+      margin: 0;
+      white-space: nowrap;
     }
 
     /* ── Footer ── */
